@@ -1,0 +1,5 @@
+{
+  "name": "New Living library",
+  "description": "An AI-powered web application for exploring, summarizing, and discussing a library of resources. Features include a searchable library, an AI assistant for queries, and a PDF summarization tool.",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,25 @@
+{
+  "name": "living-library-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for Living Library 2.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@google/genai": "^1.20.0",
+    "firebase": "^12.3.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^7.9.3"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.15",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^5.0.4",
+    "vite": "^7.1.7"
+  }
+}

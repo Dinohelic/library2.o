@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Living Library 2.0: Powered by AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'brand-blue': '#00529B',
+              'brand-orange': '#FD6A02',
+            },
+            keyframes: {
+              'fade-in': {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+            },
+            animation: {
+              'fade-in': 'fade-in 0.5s ease-out forwards',
+            },
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.8.2",
+    "firebase/app": "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js",
+    "firebase/auth": "https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js",
+    "firebase/": "https://aistudiocdn.com/firebase@^12.2.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.20.0",
+    "express": "https://aistudiocdn.com/express@^5.1.0",
+    "cors": "https://aistudiocdn.com/cors@^2.8.5",
+    "dotenv": "https://aistudiocdn.com/dotenv@^17.2.2",
+    "firebase-admin": "https://aistudiocdn.com/firebase-admin@^13.5.0",
+    "fs": "https://aistudiocdn.com/fs@^0.0.1-security"
+  }
+}
+</script>
+<!-- Add Babel to transpile JSX/TSX in the browser -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gray-50 dark:bg-slate-900">
+    <div id="root"></div>
+    <!-- Changed script type to text/babel for Babel transpilation -->
+    <script type="text/babel" data-type="module" src="./index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
