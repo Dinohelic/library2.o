@@ -10,9 +10,13 @@
       "DOM.Iterable"
     ],
     "skipLibCheck": true,
+
+    // ✅ Add vite/client here
     "types": [
-      "node"
+      "node",
+      "vite/client"
     ],
+
     "moduleResolution": "bundler",
     "isolatedModules": true,
     "moduleDetection": "force",
@@ -25,5 +29,11 @@
     },
     "allowImportingTsExtensions": true,
     "noEmit": true
-  }
+  },
+
+  // ✅ Make sure TypeScript sees your code and env types
+  "include": [
+    "src",
+    "vite-env.d.ts"
+  ]
 }
